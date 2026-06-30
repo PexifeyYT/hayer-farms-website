@@ -5,7 +5,6 @@ A responsive marketing website for **Hayer Farms**, a family-owned farm in Gulal
 ## Structure
 
 ```
-project/
 ├── index.html      # Page markup
 ├── styles.css      # All styles (fluid, responsive)
 ├── script.js       # Nav, scroll reveal, Web3Forms submission
@@ -14,10 +13,9 @@ project/
 
 ## Running locally
 
-The contact form uses [Web3Forms](https://web3forms.com), which requires the page to be served over `http://` or `https://` (not opened directly via `file://`). Start any static server from the `project/` folder:
+The contact form uses [Web3Forms](https://web3forms.com), which requires the page to be served over `http://` or `https://` (not opened directly via `file://`). Start any static server from the project root:
 
 ```bash
-cd project
 python -m http.server 8000
 # then open http://localhost:8000
 ```
@@ -38,6 +36,6 @@ The layout is fully fluid and tested across breakpoints for phones, tablets, lap
 
 ## Deploying
 
-It's a fully static site — deploy the `project/` folder to any static host (GitHub Pages, Netlify, Vercel, Cloudflare Pages).
+It's a fully static site — deploy the repo root to any static host (GitHub Pages, Netlify, Vercel, Cloudflare Pages). No build command or Root Directory override needed.
 
 © 2025 Hayer Farms · Gulalipur, Tarn Taran, Punjab
