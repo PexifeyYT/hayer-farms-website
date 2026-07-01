@@ -113,12 +113,30 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%; height: auto; display: block;
   filter: drop-shadow(0 4px 16px rgba(0,0,0,0.65));
 }
+.hero-logo-name {
+  display: block;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(20px, 2.4vw, 32px);
+  font-weight: 700;
+  color: #F5EDD8;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  margin-top: 6px;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.8);
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
 #hero-logo.scrolled {
   /* End: small, top-left corner in navbar */
   top: 8px;
   left: 20px;
   translate: 0 0;
   width: clamp(55px, 7vw, 85px);
+}
+#hero-logo.scrolled .hero-logo-name {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* ═══════════════ NAVBAR ═══════════════ */
