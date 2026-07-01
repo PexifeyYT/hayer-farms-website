@@ -1,10 +1,7 @@
-// ═══════════════ Sticky navbar + hero logo animation ═══════════════
+// ═══════════════ Sticky navbar ═══════════════
 const navbar = document.getElementById('navbar');
-const heroLogo = document.getElementById('hero-logo');
 const onScroll = () => {
-  const scrolled = window.scrollY > 60;
-  navbar.classList.toggle('scrolled', scrolled);
-  heroLogo.classList.toggle('scrolled', scrolled);
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
 };
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
