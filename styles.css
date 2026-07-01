@@ -95,9 +95,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* ═══════════════ NAVBAR ═══════════════ */
 #navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  padding: 0 var(--gutter); height: 72px;
+  padding: 0 var(--gutter); height: 80px;
   display: flex; align-items: center; justify-content: space-between;
   background: transparent; transition: background 0.4s, box-shadow 0.4s;
+}
+.nav-brand {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; text-decoration: none;
+}
+.nav-logo {
+  height: 64px; width: auto; display: block;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
 }
 #navbar.scrolled {
   background: rgba(20, 40, 10, 0.97);
